@@ -1,7 +1,7 @@
-Build an indexer that tracks transactions from a specific Ethereum wallet
+Build an indexer that tracks all the blocks created on the Ethereum chain
 
 What will the Indexer do?
-1. Monitor the Ethereum blockchain and listen to transactions from the specified address
+1. Monitor the Ethereum blockchain and listen to newly created blocks
 
 - Connect Golang app with a blockchain node using rpc url
 - Try getting latest block number
@@ -23,7 +23,7 @@ Files
 3. Build an API to allow users to retrieve the stored transactions
 
 Routes
-- Get block by BlockNumber   /block/:blockNumber
-- Get block by BlockHash     /block/:blockHash
+- Get block by BlockNumber   /block/blockNumber/:blockNumber
+- Get block by BlockHash     /block/blockHash/:blockHash
 - Get all blocks             /blocks
 - Post a block {blockNumber} /blocks
